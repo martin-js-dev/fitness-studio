@@ -385,3 +385,109 @@ border-radius: 5px;
 }
 
 
+// <!-- -----------------UNDER HERO-------------- -->
+
+.under-hero {
+  
+  h1{
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    text-align: center;
+  }
+  span{
+    color:$red;
+  }
+}
+
+.numbers{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.number{
+  display: flex;
+  margin-right: 6rem;
+}
+.number{
+  
+  span{
+    font-size: 5rem;
+  }
+  p{
+    padding-top:1.5rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+
+.intro-section{
+    margin-top: 5rem;
+}
+
+.nav-bar li a:hover{
+  color:$red;
+}
+
+
+/*-----------======---CAROUSEL-----=======-----------------*/
+
+
+div#carousel { 
+  perspective: 1200px; 
+  background: #2b2a2a;
+  padding-top: 7%; 
+  padding-bottom: 15%;
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; 
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg);
+   }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+.ss-icon{
+  font-size: 3rem;
+}
+
+
+
