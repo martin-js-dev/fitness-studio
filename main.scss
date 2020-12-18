@@ -490,4 +490,214 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 
 
+// <!-- -----------------SERVICES------------- -->
+
+
+.service-wrap {
+  
+  h1{
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    text-align: center;
+
+  }
+  span{
+    color:$red;
+  }
+}
+.wrapper-services {
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.wrapper-services img{
+  height: 40rem;
+  width: 32rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.service-left{
+  margin-top: 5rem;
+
+}
+.service {
+  padding-bottom: 2rem;
+}
+.service-right{
+  margin-top: 5rem;
+}
+.service h2{
+  text-transform: uppercase;
+}
+.service p {
+  text-align: left;
+  color:rgb(165, 163, 163);
+  font-size: 1.2rem;
+}
+.service a:hover{
+  color:$red;
+}
+
+
+// -----------------VIDEOS-------------- //
+
+.videos-wrap{
+  background-color: #2b2a2a;;
+  padding-top: 4rem;
+  margin-top: 10rem;
+}
+
+.videos-wrap h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.videos-wrap span{
+  color:$red;
+}
+
+main {
+  width: 35rem;
+  height: 35rem;
+}
+.videos{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  
+}
+
+.video-pic{
+  margin-left: -20rem;
+}
+
+.video-pic img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  
+}
+
+.video-pic span{
+  color:white;
+  padding-left: 0.5rem;
+  
+}
+
+.video{
+  width: 25rem;
+  height: 35rem;
+ 
+}
+
+.video p{
+  color:rgb(165, 163, 163);
+  font-size: 1.2rem;
+}
+
+.video p{
+  width: 20rem;
+}
+.videoWrapper {
+  position: relative;
+  width: 65%;
+  height: 0;
+  background-color: #000;
+  &43 {
+    padding-top: 75%;
+  } 
+  &169 {
+    padding-top: 56%;
+  } 
+}
+.videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  text-indent: -999em;
+  overflow: hidden;
+  opacity: 0.7;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border: 5px solid $accent;
+    border-radius: 100%;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: -25px 0 0 -10px;
+    border-left: 40px solid$accent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  &:hover,
+  &:focus {
+    &:before {
+      border-color: $accent;
+    }
+    &:after {
+      border-left-color: $accent;
+    }
+  }
+  .videoWrapperActive & {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
+}
+
 
