@@ -701,3 +701,422 @@ main {
 }
 
 
+
+
+/* ==============TEAM====================*/
+
+.team-wrap{
+  margin-top: 15rem;
+}
+.team-members {
+  transform: rotate(-45deg);
+  margin-right: 5rem;
+  
+}
+.team-members li > div {
+	float: left;
+	width: 30%;
+}
+
+.team-members li:nth-child(2) > div:first-child {
+	margin-left: 20%;
+}
+
+.team-members li:last-child > div:first-child {
+	margin-left: 40%;
+}
+
+
+.team-1 img {
+
+  margin: 37px;
+  background-color: #2b2a2a;;;
+  
+}
+
+.team-2 img {
+ 
+
+  margin: 5px;
+  background-color: #2b2a2a;;;
+  
+}
+
+.team-3 img{
+
+ 
+  margin: 40px;
+  background-color: #2b2a2a;;;
+}
+
+.team-4 img {
+
+  margin: 3px;
+  background-color: #2b2a2a;;;
+}
+
+.member-details img {
+	transform: rotate(0deg) translate(0, 15px) scale(1.2);
+	display: block;
+width: 80%;
+height: 80%;
+}
+
+.member-details{
+ 
+ margin-right: 0.5rem;
+ margin-top: 0.5rem;
+  background-color: #2b2a2a;
+  border-radius: 5px;
+}
+
+.member-details > div {
+	position: relative;
+  overflow: hidden;
+  
+}
+
+.member-info {
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg) translate(-12px, 15px);
+	left: 0;
+	right: 0;
+	z-index: 2;
+	text-align: center;
+}
+
+.member-info h3,
+.member-info p {
+	margin: 0;
+	color: #fff;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.member-info h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	top: -120px;
+}
+
+.member-info p {
+	font-weight: 300;
+	font-size: 16px;
+	bottom: -160px;
+}
+
+.member-details > div:after {
+	content: '';
+	background-image: linear-gradient(45deg, $red 50%, transparent 50%);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+.member-details *,
+.member-details > div:after {
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.member-details:hover *,
+.member-details:hover > div:after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.member-details:hover .member-info h3 {
+	top: 0;
+}
+
+.member-details:hover .member-info p {
+	bottom: 0;
+}
+
+.team-overview{
+  margin-top: -20rem;
+  margin-left: 5rem;
+}
+
+.team-overview h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.team-overview span{
+  color:$red;
+}
+.team-overview > a {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+	display: block;
+}
+.team-overview p{
+  color:#a5a3a3;
+  font-size: 1.2rem;
+}
+.team-overview > a:before {
+	content: '';
+	width: 10px;
+	height: 2px;
+	position: relative;
+	top: -3px;
+	margin-right: 5px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-center > div:first-child {
+	order: 2;
+}
+
+
+@media only screen and (max-width : 992px) {
+	.sm-no-flex {
+		display: block;
+	}
+	.sm-no-float {
+		float: none !important;
+	}
+	.sm-text-center {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 550px) {
+	.team-members li {
+		text-align: center;
+	}
+	.team-members li > div {
+		float: none;
+		display: inline-block;
+		width: 30%;
+		margin: 0 !important;
+	}
+	.team-members {
+		transform: rotate(0);
+	}
+	.member-details img {
+		transform: rotate(0) translate(0, 0);
+	}
+	.team-overview {
+		padding: 15px;
+	}
+	
+}
+
+@media only screen and (max-width : 399px) {
+	.team-members li > div {
+		width: 48%;
+	}
+}
+
+
+//<!--============ PRICING  ====================-->
+
+.pricing-wrapper {
+  
+  h1{
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    text-align: center;
+
+  }
+  span{
+    color:$red;
+  }
+}
+
+.pricing-wrap{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 100vh;
+  padding: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #2b2a2a;
+
+}
+
+.flip-card-container {
+  width: 310px;
+  height: 500px;
+  margin: 40px;
+  perspective: 1000px;
+}
+
+
+.flip-card {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+}
+
+
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background: $black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricered{
+  width: 110%;
+  height: 110%;
+  background-color: $red;
+  margin-top: -2rem;
+  margin-left: -1rem;
+}
+
+
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+
+figure {
+  z-index: -1;
+}
+
+
+figcaption {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-top: 12%;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  position: absolute;
+  top: 0;
+  
+}
+
+
+.flip-card-container:hover .card-front .img-bg::before {
+  width: 6px;
+  border-left-color: var(--primary);
+  border-right-color: var(--primary);
+}
+
+
+.pricing-ul {
+  padding-top: 40%;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  list-style: none;
+  color: var(--white-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -2rem;
+  li {
+    width: 100%;
+    margin-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin-left: 0rem;
+  }
+  
+  li:nth-child(2n) {
+    color: var(--white-2);
+  }
+  
+  li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: .2;
+  }
+  
+}
+
+.price-b{
+  margin-top: 1rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.middle{
+  background-color: $black;
+}
+
+
+
+
+button:hover+.design-container,
+button:active+.design-container,
+button:focus+.design-container {
+  --tr: 20;
+  --op: .7;
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 16px;
+  
+}
+
+
+
+
+
